@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> 
+    function save() {
+        alert('Your entry has been saved.');
+    } 
+    </script>
+    <title>Create a new Event</title>
+</head>
+<body>
+
+    <form onsubmit = "save()">
+        <label> Event type: </label>
+        <select id = "events" name = "events" required>
+            <option selected = "Choose">Choose one</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Wedding">Wedding Reception</option>
+            <option value="Debut">Reunion</option>
+            <option value="Others">Others</option>
+          </select><br><br>
+          <label> Event Title: <input type = "text" required/></label><br>
+          <table>
+              <tr>
+                <td><label> Event Dates: </label><input type = "date" required/></td> 
+                <td><p> to </p></td> 
+                <td><input type = "date" required/></td>
+              </tr>
+          </table>
+          <label> Posting Date: <input type = "date" required/></label><br><br>
+          <input type = "checkbox" id = "regreq"/><label> Is Registration Required? </label><br>
+          <input type = "checkbox" id = "famprog"/><label> Is this event associated with any Family Programs? </label><br>
+          <input type = "checkbox" id = "email"/><label> Upon Registration Completion, Are Users to Receive an Auto Generated Email? </label><br>
+          <input type = "checkbox" id = "contract"/><label> Is There a Point of Contract? </label><br>
+          <input type = "checkbox" id = "regreq"/><label> Is There a Hosting Command Point of Contract? </label><br>
+          <table align = "center">
+            <tr>
+                <td> <input type = "submit" value = "Save" /> </td>
+                <td> <input type = "reset" value = "Cancel" /> </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
